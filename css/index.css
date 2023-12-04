@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2? family= Cinzel & family= Montserrat:wght@100;200;400;800;900 & family= Open+Sans:wght@400; 700 & família= Roboto:wght@300;900 & display=swap');
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fundo{
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.fundo_top{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: #934954;
+
+}
+
+.logo1{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+.menu-h{
+    position: relative;
+    top: 101px;
+    list-style: none;
+    padding: 0;
+    background-color: #934954;
+    text-align: center;
+}
+
+
+.menu-h li{
+    display: inline;
+}
+
+.menu li a{
+    font-family: 'Cinzel';
+    font-size: 20px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    justify-items: center;
+    
+}
+
+.menu li a:hover{
+    color: #cecdcd ;
+    transition: all 0.2s ease;
+}
+
+.sacola{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 200px;
+    top: 35px;
+    display: flex;
+}
+
+
+/* botao cadastro*/
+div.container{
+    width: 170px;
+    height: 37px;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    display: flex;
+}
+
+input[type="submit"]{
+    padding: 5px 10px;
+    font-family: 'Cinzel';
+    font-size: 18px;
+    background-color: #934954;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: 	#934954;
+    color: white;
+    border: 1px solid white;
+}
+/*fim botao cadastro*/ 
+
+/*inicio barra de busca*/
+.search-box{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #934954;
+    height: 45px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+}
+.search-txt{
+    font-family: 'Cinzel';
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+  
+}
+
+::-webkit-input-placeholder{
+    color: #b76e79;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #934954;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-box > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+/*fim barra de busca*/
+
+/*inicio carrossel*/
+.slider{
+    margin: 80px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+  
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide img{
+    width: 800px;
+
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: #934954;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: white;
+}
+
+/*fim carrossel*/
+
+/*inicio cards carrossel*/
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    position: sticky;
+    position: relative;
+    top: 50px;
+  }
+
+  .titulo2{
+    font-size: 3.5em;
+    font-family: 'Cinzel';
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    margin-right: 50px; 
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #EFEFEF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #934954;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #934954;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #EFEFEF;
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #934954;
+  }
+  .name{
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 16px;
+    color: #EFEFEF;
+    padding: 8px 16px;
+    background-color: #934954;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button:hover{
+    background: #934954;
+  }
+  
+  .swiper-navBtn{
+    color: #b1636f;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #934954;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #b1636f;
+    opacity: 2;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #934954;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+/*fim crds carrossel*/
+
+/*inicio marca*/
+.titulo1{
+    font-size: 4.0em;
+    font-family: 'Cinzel';
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    position: relative;
+    top: 220px ;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 240px;
+}
+
+.card2{
+    background-color: white;
+    width: 270px;
+    height: 100px;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0 , 0, 0.2);
+}
+
+.card2-titulo1{
+    justify-items: center;
+    align-items: center;
+    margin: -5px 60px;
+}
+
+.card2-titulo2{
+    justify-items: center;
+    align-items: center;
+    margin: -25px 60px;
+
+}
+
+.card2-titulo3{
+    justify-items: center;
+    align-items: center;
+    margin: 20px 65px;
+
+}
+
+.card2-titulo4{
+    justify-items: center;
+    align-items: center;
+    margin: 35px 75px;
+}
+
+.card2-titulo5{
+    justify-items: center;
+    align-items: center;
+    margin: 35px 85px;
+}
+
+.card2-titulo6{
+    justify-items: center;
+    align-items: center;
+    margin: 25px 55px;
+}
+
+.card2:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+/*fim marca*/
+
+/*style contato*/
+#contato-home{
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1920px;
+}
+
+.contato{
+    width: 1000px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+    background-image: url(../img/brilho.jpeg);
+}
+
+.card-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.card-titulo2{
+    padding-top: 78px;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 5px 0;
+    font-family: 'Cinzel';
+}
+
+.card-texto2{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#conosco{
+    font-family: 'Cinzel';
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 25px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #b1636f; 
+}
+/*fim contato*/
+
+/*inicio lista*/
+
+.titulo4{
+    font-size: 3.5em;
+    font-family: 'Cinzel';
+    text-align: center;
+    position: relative;
+    top: 950px;
+}
+
+.texto4{
+    font-size: 1.2em;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 970px;
+}
+
+.sla{
+    position: relative;
+    top: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separar{
+    width: 100%;
+    height: 190px;
+    background-color: #934954;
+    position: relative;
+    top: 900px;
+}
+
+/* Estilos para os cards */
+.cardss {
+    width: 300px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0 , 0, 0.2);
+    justify-content: center;
+    z-index: 3;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px; /* A largura máxima para celular */
+}
+
+/* Estilos para a imagem no card */
+.cardss img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para o conteúdo do card */
+.card-content1 {
+    margin-top: 10px;
+}
+
+/* Estilos para o título do card */
+.card-content1 h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para a descrição do card */
+.list{
+    text-align: justify;
+    font-size: 1.0em;
+    text-decoration: solid;
+    color: #934954;
+    display: inline-block;
+    position: relative;
+    left: 50px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: #934954;
+    font-size: 17px;
+    font-family: 'montserrat', sans-serif;
+    top: -10px;
+}
+
+/*fim lista*/
+
+/*inicio footer*/
+footer{
+    background-color: #934954;
+    padding: 50px 0;
+    width: 100%;
+    height: 290px;
+    position: absolute;
+    top: 3005px;
+}
+
+.container-footer{
+    max-width: 14400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #cecdcd ;
+    padding-left: 10px;
+}
+
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+
+.footer-col .medias-socias a{ 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: blueviolet;
+    background-color: white;
+}
+
+.footer-company-name{
+    color: gainsboro;
+    font-family: 'Cinzel';
+    font-size: 1.0rem;
+    margin-top: 20px;
+}
+/*fim footer*/
