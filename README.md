@@ -35,9 +35,11 @@ Capturas de Tela
 Página inicial:
 
 ![image](https://github.com/user-attachments/assets/221c0faa-5c7e-4f96-a055-c4e024833bf8)
+
 Index
 
 ![image](https://github.com/user-attachments/assets/b44a31c7-eb5e-4790-8acf-f43ef1f8c85b)
+
 Index
 
 ![image](https://github.com/user-attachments/assets/3ba27af5-52a0-4fac-9a5f-322646cb8f87)
