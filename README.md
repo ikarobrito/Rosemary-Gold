@@ -15,3 +15,9 @@ siga os passos abaixo para rodar o projeto localmente:
 1. Clone este repositório:
    "git clone https: github.com/ikarobrito/Rosemary-GOld.git
 2. Navegue até o diretório do projeto
+   "cd Rosemary-Gold"
+3. Instale dependências?
+   "npm install"
+4. Inicie o projeto:
+   "npm start"
+5. Acesse no navegador: "http://localhost:3000"
