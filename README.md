@@ -1,17 +1,24 @@
-Bem- vindo ao Rosemary Golds, um projeto que simula uma perfumaria onl.ine exclsiva. Este repositório foi desenvolvido para explorar conceitos de desenvolvimento web e oferecer uma experiência elegante e funcional paara os amantes de perfumes 
+Bem-vindo ao Rosemary Gold, um projeto que simula uma perfumaria onl.ine exclsiva. Este repositório foi desenvolvido para explorar conceitos de desenvolvimento web e oferecer uma experiência elegante e funcional paara os amantes de perfumes.
 
-Funcionalidades principais 
+![image](https://github.com/user-attachments/assets/437a016c-2695-4db8-b1f9-ab3870d511b6)
+
+Funcionalidades principais:
+
 Catálogo de perfumes com descrição detalhada 
 Sistema de busca e filtragem por categorias 
 Carrinho de compras dinãmico
 
-Tecnlogias Utilizadas
+
+Tecnlogias Utilizadas:
+
 Front-end: HTML, CSS, JavaScript
 Back: PHP, Node.js
 Banco de Dados: SQL
 
-Como executar Localmente 
-siga os passos abaixo para rodar o projeto localmente:
+
+Como Executar Localmente:
+
+Siga os passos abaixo para rodar o projeto localmente:
 1. Clone este repositório:
    "git clone https: github.com/ikarobrito/Rosemary-GOld.git
 2. Navegue até o diretório do projeto
@@ -21,3 +28,7 @@ siga os passos abaixo para rodar o projeto localmente:
 4. Inicie o projeto:
    "npm start"
 5. Acesse no navegador: "http://localhost:3000"
+
+
+Capturas de Tela
+Página inicial:
