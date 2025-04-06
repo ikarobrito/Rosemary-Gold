@@ -1,0 +1,42 @@
+<?php
+session_start();
+include('conexao.php');
+mysqli_set_charset($conexao, "utf8");
+
+if (isset($_SESSION['msgv'])) {
+    session_destroy();
+}
+
+if (isset($_COOKIE["email"])) {
+    $email = strtolower(trim($_COOKIE["email"]));
+
+    // Verificar se o cliente já respondeu o formulário
+    $result = $conexao->query("SELECT id FROM respostas_formulario WHERE LOWER(cliente_email) = '$email'");
+
+    if ($result !== false) {
+        if ($result->num_rows > 0) {
+            echo "Você já respondeu o formulário. Não é permitido enviar novamente.";
+        } else {
+            // Obter dados do formulário
+            $estacao = $_POST['estacao'];
+            $sexo = $_POST['sexo'];
+            $intensidade = $_POST['intensidade'];
+            $notas = isset($_POST['notas']) ? implode(", ", $_POST['notas']) : "";
+            $ocasiao = $_POST['ocasiao'];
+            $durabilidade = $_POST['durabilidade'];
+
+            // Inserir as respostas na tabela
+            $sql = "INSERT INTO respostas_formulario (cliente_email, estacao, sexo, intensidade, notas, ocasiao, durabilidade) 
+                    VALUES ('$email', '$estacao', '$sexo', '$intensidade', '$notas', '$ocasiao', '$durabilidade')";
+
+            if ($conexao->query($sql) === TRUE) {
+                echo "Respostas do formulário salvas com sucesso.";
+            } else {
+                echo "Erro ao salvar as respostas do formulário: " . $conexao->error;
+            }
+        }
+    }
+    // Fechar a conexão com o banco de dados
+    $conexao->close();
+}
+?>

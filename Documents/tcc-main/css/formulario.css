@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2? family= Cinzel & family= Montserrat:wght@100;200;400;800;900 & family= Open+Sans:wght@400; 700 & família= Roboto:wght@300;900 & display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif, 'cinzel';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #934954, #e1c8c8);
+}
+
+.logo1{
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+.container {
+    width: 60%;
+    height: 500px;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.form-header {
+    display: flex;
+    
+}
+.title{
+    font-family:'Cinzel' ;
+    justify-content: right;
+    
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #934954;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #934954;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #934954;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.gender-group {
+    margin-top: 20px;
+    padding: 0.5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000000c0;
+    font-family: 'cinzel';
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 35px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #934954;
+    padding: 0.62rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.continue-button1 button {
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #934954;
+    background-color: white;
+    padding: 0.62rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #934954;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.continue-button1 button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #934954;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
